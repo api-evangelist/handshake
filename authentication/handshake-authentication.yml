@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://support.joinhandshake.com/hc/en-us/articles/31061076506391-Getting-Started-with-EDU-API
+docs: https://support.joinhandshake.com/hc/en-us/sections/31055822163351-API
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: x-api-key
+  type: apiKey
+  in: header
+  parameter_name: x-api-key
+  description: >-
+    Every EDU API request must send an x-api-key header carrying the institution's API
+    key. Keys are issued and managed from the Handshake Developer Portal
+    (edu-api.joinhandshake.com) in the Subscriptions section. A regenerated key must be
+    enabled by the Handshake Technical Support team before it will authenticate.
+  sources:
+  - docs
+notes: >-
+  EDU API access is institution-scoped and read-only, currently in beta, and gated to
+  Career Services partners (request access via your Handshake Relationship Manager). No
+  public OpenAPI is published, so this profile is captured from the developer
+  documentation rather than derived from a spec. The developer portal also references an
+  OAuth playground and GraphQL/API explorer surfaces available to authenticated partners.
