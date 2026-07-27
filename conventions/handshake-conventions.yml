@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+source: https://support.joinhandshake.com/hc/en-us/articles/31061076506391-Getting-Started-with-EDU-API
+docs: https://support.joinhandshake.com/hc/en-us/articles/35762729693719-EDU-API-Endpoint-Definitions
+api: Handshake EDU API
+authentication:
+  style: api-key
+  header: x-api-key
+  see: authentication/handshake-authentication.yml
+access_model:
+  read_only: true
+  scope: institution
+  description: >-
+    The EDU API is read-only and institution-scoped: each API key only returns data for
+    the requesting institution.
+pagination:
+  style: query-parameter
+  description: API calls support query parameters for pagination and sorting.
+sorting:
+  supported: true
+  style: query-parameter
+delta_fetching:
+  supported: true
+  description: >-
+    Supports delta fetching so integrators can retrieve only records changed since a
+    prior fetch rather than re-pulling full datasets.
+versioning:
+  supported: true
+  description: The EDU API is versioned; see lifecycle/handshake-lifecycle.yml.
+data_windows:
+  postings: >-
+    Job-posting data includes only postings that have expired within the past 30 days.
+idempotency:
+  supported: false
+  reason: >-
+    The EDU API is read-only (data retrieval only), so there is no write/idempotency
+    contract to document.
+notes: >-
+  Cross-cutting request/response semantics captured from the EDU API developer
+  documentation. Resources exposed include applications, appointments, career fairs,
+  jobs, postings, qualifications, and meetings. No public OpenAPI is available, so this
+  is documented from the help center rather than derived from a spec.

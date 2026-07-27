@@ -1,9 +1,30 @@
 aid: handshake
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/handshake.png
 name: Handshake
-description: 'Handshake is a company surfaced as a portfolio company of eqt-ventures, ggv-capital, greylock,
-  kleiner-perkins, lightspeed-venture-partners, pantera-capital, point-nine, spark-capital, true-ventures,
-  uncork-capital and added to the API Evangelist network as a stub for enrichment. Sector: hr-tech. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Handshake (joinhandshake.com) is the early-career talent network that connects
+  students and recent graduates with employers, alongside the higher-education Career
+  Services teams that support them. For developers and institutional integrators,
+  Handshake exposes the EDU API: a read-only, institution-scoped, versioned API for
+  career-services data management and automation, covering applications, appointments,
+  career fairs, jobs, postings, qualifications, and meetings. The EDU API is currently
+  in beta and gated to Career Services partners, authenticates with an x-api-key header
+  issued from the Developer Portal, and supports pagination, sorting, and delta
+  fetching. Handshake was originally added to the API Evangelist network as a VC
+  portfolio lead and has since been enriched from its public developer documentation,
+  trust center, and status surfaces.
 url: https://raw.githubusercontent.com/api-evangelist/handshake/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -22,11 +43,36 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Hr Tech
-apis: []
+- Careers
+- Recruiting
+- Higher Education
+- Talent
+- Students
+- Jobs
+apis:
+- name: Handshake EDU API
+  description: >-
+    Read-only, institution-scoped EDU API for career-services data: applications,
+    appointments, career fairs, jobs, postings, qualifications, and meetings.
+    Authenticates via x-api-key header; supports pagination, sorting, and delta
+    fetching. Beta; access gated to Career Services partners.
+  humanURL: https://support.joinhandshake.com/hc/en-us/articles/31061076506391-Getting-Started-with-EDU-API
+  baseURL: https://edu-api.joinhandshake.com
+  tags:
+  - EDU API
+  - Career Services
+  - Higher Education
+  properties:
+  - type: GettingStarted
+    url: https://support.joinhandshake.com/hc/en-us/articles/31061076506391-Getting-Started-with-EDU-API
+  - type: APIReference
+    url: https://support.joinhandshake.com/hc/en-us/articles/35762729693719-EDU-API-Endpoint-Definitions
+  - type: Authentication
+    url: authentication/handshake-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -35,3 +81,48 @@ maintainers:
 common:
 - type: Website
   url: https://www.joinhandshake.com/
+- type: DeveloperPortal
+  url: https://edu-api.joinhandshake.com:444/
+- type: Documentation
+  url: https://support.joinhandshake.com/hc/en-us/sections/31055822163351-API
+- type: APIReference
+  url: https://support.joinhandshake.com/hc/en-us/articles/35762729693719-EDU-API-Endpoint-Definitions
+- type: GettingStarted
+  url: https://support.joinhandshake.com/hc/en-us/articles/31061076506391-Getting-Started-with-EDU-API
+- type: Support
+  url: https://support.joinhandshake.com/hc/en-us
+- type: Blog
+  url: https://joinhandshake.com/blog
+- type: SignUp
+  url: https://app.joinhandshake.com/access?user_type=employer
+- type: PrivacyPolicy
+  url: https://joinhandshake.com/privacy-policy/
+- type: TermsOfService
+  url: https://joinhandshake.com/legal/tos/
+- type: StatusPage
+  url: https://status.joinhandshake.com/
+- type: ChangeLog
+  url: changelog/handshake-changelog.yml
+- type: Lifecycle
+  url: lifecycle/handshake-lifecycle.yml
+- type: Authentication
+  url: authentication/handshake-authentication.yml
+- type: Conventions
+  url: conventions/handshake-conventions.yml
+- type: TrustCenter
+  url: security/handshake-trust-center.yml
+- type: Compliance
+  url: https://trust.joinhandshake.com/
+- type: Security
+  url: https://joinhandshake.com/security
+- type: VulnerabilityDisclosure
+  url: security/handshake-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/handshake-domain-security.yml
+- type: LLMsTxt
+  url: llms/handshake-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://trust.joinhandshake.com/
+url: https://trust.joinhandshake.com/
+certifications:
+- SOC 2 Type II
+- PCI DSS
+- TX-RAMP
+- UK Cyber Essentials
+- GDPR
+- CCPA
+- EU-U.S. Data Privacy Framework
+notes: >-
+  Handshake publishes a Wolfia-hosted trust center at trust.joinhandshake.com listing
+  its compliance posture. SOC 2 Type II audit report available upon request. ISO 27001 /
+  27017 / 27018 and ISO 9001 / 22301 are attributed on the page to Handshake's Google
+  Cloud Platform infrastructure provider, not to Handshake directly, so they are not
+  claimed as Handshake certifications here.
+evidence:
+- source: https://trust.joinhandshake.com/
+  keywords:
+  - soc 2 type ii
+  - pci dss
+  - tx-ramp
+  - uk cyber essentials
+  - gdpr
+  - ccpa
+  - eu-u.s. data privacy framework
+  - trust center

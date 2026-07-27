@@ -1,0 +1,14 @@
+generated: '2026-07-19'
+method: searched
+source: https://updates.joinhandshake.com/board/reporting-api
+api: Handshake
+scheme: product-updates-board
+current_version: null
+docs: https://updates.joinhandshake.com/board/reporting-api
+notes: >-
+  Handshake publishes product updates through a public "What's new" board
+  (updates.joinhandshake.com), including a dedicated Reporting API board. It tracks
+  rolling feature announcements rather than a semantically versioned API changelog; no
+  dated, versioned API-changelog entries are individually enumerated here to avoid
+  fabricating version/date pairs the board does not present in a structured form.
+entries: []

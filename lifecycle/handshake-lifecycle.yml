@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+source: https://support.joinhandshake.com/hc/en-us/articles/31061076506391-Getting-Started-with-EDU-API
+api: Handshake EDU API
+maturity: beta
+versioning:
+  supported: true
+  docs: https://support.joinhandshake.com/hc/en-us/sections/31055822163351-API
+  notes: >-
+    The EDU API is versioned. As a beta program, access is provisioned per institution
+    via the Handshake Relationship Manager; not every institution has access yet.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No published deprecation / Sunset-header policy was found.
+status_page: https://status.joinhandshake.com/
+product_updates: https://updates.joinhandshake.com/board/reporting-api
+notes: >-
+  Lifecycle captured from Handshake's EDU API developer documentation and public status
+  page. No public OpenAPI is available, so no deprecated operations could be derived.
